@@ -15,7 +15,7 @@ To keep our discussion in Slack more organized, we ask you to follow these sugge
   
 ### How to troubleshoot issues
 
-The first step is to try to solve the issue on you own; get use to solving problems. This will be a real life skill you need when employeed. 
+The first step is to try to solve the issue on you own; get used to solving problems. This will be a real life skill you need when employeed. 
 
 1. What does the error say? There will often be a description of the error or instructions on what is needed, I have even seen a link to the solution. Does it reference a specific line of your code?
 2. Restart the application or server/pc. 
@@ -33,12 +33,12 @@ The first step is to try to solve the issue on you own; get use to solving probl
 * Before asking a question, check the [FAQ](https://docs.google.com/document/d/19bnYs80DwuUimHM65UV3sylsCn2j1vziPOwzBwQrebw/edit).
 * DO NOT use screenshots, especially don’t take pictures from a phone.
 * DO NOT tag instructors, it may discourage others from helping you.
-* Copy and past errors; if it’s long, just post it in a reply to your thread. 
+* Copy and paste errors; if it’s long, just post it in a reply to your thread. 
 * Use ``` for formatting your code.
-* Use the same thread for the conversation (that means reply to your own thread). 
-* DO NOT create multiple posts to discus the issue.
+* Use the same thread for the conversation (that means replying to your own thread). 
+* DO NOT create multiple posts to discuss the issue.
 * You may create a new post if the issue reemerges down the road. Be sure to describe what has changed in the environment.
-* Provide addition information in the same thread of the steps you have taken for resolution.
+* Provide additional information in the same thread of the steps you have taken for resolution.
   
 
 
