@@ -58,3 +58,54 @@ yellow_schema = StructType([
     StructField("congestion_surcharge", DoubleType(), nullable=True)
 ])
 
+
+python3 spark_sql_avi_script.py \
+    --input_green="gs://dezoomcamp2024_project/processed/green/2020/*" \
+    --input_yellow="gs://dezoomcamp2024_project/processed/yellow/2020/*" \
+    --output="gs://dezoomcamp2024_project/processed/revenue/trip_data_2020"
+    
+URL = "spark://dezoomcamp2024.us-east1-b.c.dezoomcamp2024-week5.internal:7077"
+
+/home/abyssde232024/spark/spark-3.3.2-bin-hadoop3/bin/spark-submit \
+    --master "spark://dezoomcamp2024.us-east1-b.c.dezoomcamp2024-week5.internal:7077" \
+    --conf PROP="spark.jars.packages","com.google.cloud.spark:spark-bigquery-with-dependencies_2.12:0.15.1-beta,com.google.cloud.bigdataoss:gcs-connector:hadoop2-2.1.6","spark.jars","https://storage.googleapis.com/hadoop-lib/gcs/gcs-connector-hadoop3-latest.jar" \
+    spark_sql_avi_script.py \
+        --input_green="gs://dezoomcamp2024_project/processed/green/2021/*" \
+        --input_yellow="gs://dezoomcamp2024_project/processed/yellow/2021/*" \
+        --output="gs://dezoomcamp2024_project/processed/revenue/trip_data_2021"
+        
+        python3 spark_sql_avi_script.py \
+    --input_green="gs://dezoomcamp2024_project/processed/green/2021/*" \
+    --input_yellow="gs://dezoomcamp2024_project/processed/yellow/2021/*" \
+    --output="gs://dezoomcamp2024_project/processed/revenue/trip_data_2021"
+    
+    
+/home/abyssde232024/spark/spark-3.3.2-bin-hadoop3/bin/spark-submit \
+    --master "spark://dezoomcamp2024.us-east1-b.c.dezoomcamp2024-week5.internal:7077" \
+    --conf PROP="spark.jars.packages","com.google.cloud.spark:spark-bigquery-with-dependencies_2.12:0.15.1-beta,com.google.cloud.bigdataoss:gcs-connector:hadoop2-2.1.6","spark.jars","https://storage.googleapis.com/hadoop-lib/gcs/gcs-connector-hadoop3-latest.jar", \
+    spark_sql_avi_script.py \
+        --input_green="gs://dezoomcamp2024_project/processed/green/2021/*" \
+        --input_yellow="gs://dezoomcamp2024_project/processed/yellow/2021/*" \
+        --output="gs://dezoomcamp2024_project/processed/revenue/trip_data_2021"
+
+/home/abyssde232024/spark/spark-3.3.2-bin-hadoop3/bin/spark-submit \
+    --master "spark://dezoomcamp2024.us-east1-b.c.dezoomcamp2024-week5.internal:7077" \
+    spark_sql_avi_script.py \
+        --input_green="data/processed/green/2021/*" \
+        --input_yellow="data/processed/yellow/2021/*" \
+        --output="data/report/revenue/trip_data_2021"
+        
+/home/abyssde232024/spark/spark-3.3.2-bin-hadoop3/bin/spark-submit \
+    --master "spark://dezoomcamp2024.us-east1-b.c.dezoomcamp2024-week5.internal:7077" \
+    spark_sql_avi_script.py \
+        --input_green="gs://dezoomcamp2024_project/processed/green/2021/*/" \
+        --input_yellow="gs://dezoomcamp2024_project/processed/yellow/2021/*/" \
+        --output="gs://dezoomcamp2024_project/processed/revenue/trip_data_2021"
+        
+    --input_green="processed/green/2020/" \
+    --input_yellow="processed/yellow/2020/" \
+    --output="gs://dezoomcamp2024_project/processed/revenue/trip_data_2020"
+    
+        --input_green="gs://dezoomcamp2024_project/pq/green/2020/*/"
+        --input_yellow="gs://dezoomcamp2024_project/pq/yellow/2020/*/"
+        --output="gs://dezoomcamp2024_project/pq/revenue/trip_data_2020_dp"
